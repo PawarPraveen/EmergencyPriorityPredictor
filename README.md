@@ -1,82 +1,72 @@
-# Triage Data Cleaning and Prediction
+# Machine Learning Practice Portfolio
 
-This project analyzes a patient triage dataset and demonstrates how to prepare data for a machine learning model using scikit-learn pipelines.
+This repository is a collection of machine learning and data science projects built with Python, pandas, scikit-learn, and Jupyter notebooks. Each project focuses on a different real-world problem and demonstrates practical data cleaning, feature engineering, and model-building workflows.
 
-## Project goal
+## Featured Projects
 
-The notebook builds a preprocessing workflow for predicting patient priority based on clinical and symptom information. It focuses on:
+### 1. Triage Data Cleaning and Prediction
+- Folder: `project1`
+- Goal: clean patient triage data and predict emergency priority levels using preprocessing pipelines.
+- Tools: pandas, scikit-learn, preprocessing, logistic regression
 
-- handling missing values in the `age` column
-- scaling numeric features
-- encoding categorical data such as `symptom_type`
-- combining all preprocessing steps into a `ColumnTransformer`
-- training a `LogisticRegression` model inside a single pipeline
-- evaluating the final model on a test set
+### 2. Fitness Premium Membership Prediction
+- Folder: `project2`
+- Goal: predict whether a user is likely to hold a premium membership based on workout and profile data.
+- Tools: pandas, scikit-learn, pipelines, encoding, classification
 
-## Dataset
+### 3. Loan Approval System
+- Folder: `load_approval_system`
+- Goal: analyze financial and applicant data to assess approval and risk patterns.
+- Tools: data preprocessing, model training, classification
 
-The dataset is stored in `patient_data.csv` and contains the following columns:
+### 4. Titanic Survival Prediction
+- Folder: `titanic_servival_predication`
+- Goal: predict passenger survival using demographic and ticket-related features.
+- Tools: feature engineering, model training, survival prediction
 
-- `age`
-- `body_temp`
-- `symptom_type`
-- `priority`
+## Repository Structure
 
-### Dataset summary
-
-- Total rows: 1000
-- Missing age values: 100
-- Priority classes:
-  - Standard: 643
-  - Urgent: 357
-- Symptom categories:
-  - Chest Pain
-  - Fever
-  - Fracture
-  - Headache
-  - Other
-
-## Notebook workflow
-
-The notebook follows this structure:
-
-1. Load the dataset
-2. Split into training and testing data
-3. Train an imputer for missing age values
-4. Scale numeric variables
-5. One-hot encode categorical symptom data
-6. Combine preprocessing steps with `ColumnTransformer`
-7. Train a full `Pipeline` with a logistic regression model
-8. Measure test accuracy
-
-## Key technical concepts used
-
-- `train_test_split`
-- `SimpleImputer`
-- `StandardScaler`
-- `OneHotEncoder`
-- `Pipeline`
-- `ColumnTransformer`
-- `LogisticRegression`
-
-## Setup
-
-Install the required Python libraries:
-
-```bash
-pip install pandas scikit-learn notebook
+```text
+.
+├── README.md
+├── .gitignore
+├── project1/
+│   ├── README.md
+│   ├── Project (1).ipynb
+│   └── patient_data.csv
+├── project2/
+│   ├── README.md
+│   ├── Project (2).ipynb
+│   └── fitness_data.csv
+├── load_approval_system/
+│   ├── README.md
+│   ├── Project (4).ipynb
+│   └── loan-data.csv
+├── titanic_servival_predication/
+│   ├── README.md
+│   ├── model.ipynb
+│   ├── train.csv
+│   └── test_inputs.csv
+└── .venv/
 ```
 
-Open the notebook in Jupyter:
+## Tech Stack
 
-```bash
-jupyter notebook
-```
+- Python
+- Jupyter Notebook
+- pandas
+- NumPy
+- scikit-learn
+- matplotlib
+- seaborn
 
-## Important note
+## How to Use
 
-The notebook uses a path similar to `data/patient_data.csv`, but in this workspace the CSV file is located at the project root as `patient_data.csv`. If the notebook fails to load the data, update the path to match the actual file location.
+1. Clone the repository.
+2. Open a project folder.
+3. Install dependencies in your environment.
+4. Run the notebook in Jupyter or VS Code.
 
-## Project status
+## Project Status
 
-This is an educational data-preprocessing and machine-learning notebook. It demonstrates a clean, professional workflow for preparing tabular healthcare data before model training.
+This repository is a portfolio-style collection of practical ML experiments and beginner-to-intermediate data science projects intended for learning, experimentation, and showcasing workflow quality.
