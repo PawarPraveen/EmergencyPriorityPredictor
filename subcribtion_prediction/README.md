@@ -4,7 +4,7 @@ A Jupyter notebook demonstrating a scikit-learn machine-learning pipeline that p
 
 ## Project Contents
 
-- `Project (2).ipynb` - data inspection, missing-value visualization, preprocessing pipeline, model training, and a sample prediction.
+- `premiun_prediction_model.ipynb` - data inspection, missing-value visualization, preprocessing pipeline, model training, and a sample prediction.
 - `fitness_data.csv` - fitness user dataset with 2,000 records.
 
 ## Dataset
@@ -52,7 +52,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn joblib jupyter
 
 1. Clone or download this repository.
 2. Install the requirements above.
-3. Open `Project (2).ipynb` in Jupyter Notebook, JupyterLab, or VS Code.
+3. Open `premiun_prediction_model.ipynb` in Jupyter Notebook, JupyterLab, or VS Code.
 4. Run the cells from top to bottom.
 
 **Dataset path note:** The notebook currently loads `data/fitness_data.csv`, while the CSV in this repository is at the project root. Either create a `data` directory and move the CSV into it, or change the notebook's `pd.read_csv` path to `fitness_data.csv` before running.

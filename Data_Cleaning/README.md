@@ -6,7 +6,7 @@ This project demonstrates how to prepare healthcare triage data for machine lear
 
 ## Files
 
-- `Project (1).ipynb` — notebook with the full workflow
+- `data_cleaning.ipynb` — notebook with the full workflow
 - `patient_data.csv` — patient record dataset used for the model
 
 ## Dataset
